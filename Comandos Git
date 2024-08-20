@@ -1,0 +1,53 @@
+git config --global "Aplicando configurações globais"
+git config --global user.name {"seu nome"} "Cadastra seu nome"
+git config --global user.email {seu email} "Cadastra seu email"
+git config --global init.default branch {nomedabranch} "Cadastra sua branch" -> Recomenda-se sempre cadastrar a primeira branch como "Main"
+git init "Inicializa o diretorio" -> Mostra o diretorio que vai trabalhar
+git status "Visualizar a Branch e o Rastreamento dos Arquivos"
+git add {nome do arquivo} -> "Adiciona o arquivo para o estado de "Tracked"
+git rm --cached {nome do arquivo} "Arquivo sai do estado Tracked e Staged"
+git add --all "Adiciona todos os arquivos no diretorio no modo Tracked"
+git add . "Faz a mesma função do all mas para o diretorio e subdiretorios"
+git commit  -m {"mensagem"} -> "Cria uma versão e coloca uma mensagem no commit"
+git config  --global core.excludesFile .~/.gitignore
+git diff "Mostra as alterações feita nos arquivos"
+git restore --staged {nome do arquivo} -> Para colocar o arquivo unstaged
+git log "Ver os logs de commit que voce realizou no seu diretorio"
+git log --oneline "Ver o log em apenas uma linha"
+git commit -a -m "O -a faz com que voce pule o estagio de Staged"
+git rm {nomedoarquivo} "Remove o arquivo"
+git restore --staged {nomedoarquivo} -> "Restaura o arquivo que foi colocado no estado de staged"
+git restore {nomedoarquivo} -> "Restaura o arquivo"
+git mv {nomedoarquivooriginal} {nomemudadodoarquivo} -> "Muda o nome do arquivo"
+git commit -m {"Mensagem"} --amend -> "Faz alteração no ultimo commit sem gerar um commit novo"
+git log -p -> "Mostra o log detalhado"
+git reset --hard {pontonotempo} -> "Retorna para o ponto no tempo especificado"
+git config --global  alias.{o comando que voce deseja escrever} {"comando original"} -> Para alterar a sintaxe do seu comando ao seu gosto, OBS: Se o comando tiver espaço use aspas, se não, tire as aspas
+git branch {nomedabranch} -> "Cria uma branch nova"
+git switch {nome da branch que voce quer se mudar} -> "Intercala o usuario entre branchs"
+Arquivo Tracked -> Estado de Staged "Pronto para fazer o commmit"
+
+Arquivo Tracked -> Estado de Unstaged "Não pode fazer o processo de Snapshot/Commit"
+
+Global -> "Caso" 
+
+Working -> "Quando existe alteração no arquivo"
+Staged -> "Quando eu adiciona o arquivo"
+Commit -> "Estado final"
+
+GIT RESET
+
+Soft -> "Retorna para um ponto no tempo, e coloca o ultimo commit no estado de staged"
+ 
+Mixed -> "Retorna para um ponto no tempo, e coloca o ultimo commit no estado de unstaged" 
+
+Hard -> "Retorna para um ponto no tempo, e remove o ultimo commit"
+
+Git Alias - "Atalho"
+
+Global -> "Caso queira que todas as pessoas que estiverem usando este repositorio usarem o mesmo comando" 
+
+Branch
+
+Não é recomendavel edita a main branch
+
