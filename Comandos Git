@@ -1,0 +1,13 @@
+git config --global "Aplicando configurações globais"
+git config --global user.name {"seu nome"} "Cadastra seu nome"
+git config --global user.email {seu email} "Cadastra seu email"
+git config --global init.default branch {nomedabranch} "Cadastra sua branch" -> Recomenda-se sempre cadastrar a primeira branch como "Main"
+git init "Inicializa o diretorio" -> Mostra o diretorio que vai trabalhar
+git status "Visualizar a Branch e o Rastreamento dos Arquivos"
+git add {nome do arquivo} -> "Adiciona o arquivo para o estado de "Tracked"
+git rm --cached {nome do arquivo} "Arquivo sai do estado Tracked e Staged"
+git add --all "Adiciona todos os arquivos no diretorio no modo Tracked"
+git add . "Faz a mesma função do all mas para o diretorio e subdiretorios"
+
+Arquivo Tracked -> Estado de Staged "Pronto para fazer o commmit"
+Arquivo Tracked -> Es
